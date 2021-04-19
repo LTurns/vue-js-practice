@@ -4,7 +4,7 @@ import {
 } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
-import FButton from '../components/Button.vue'
+import FButton from '../Button.vue';
 
 export default {
   title: 'Button',
@@ -22,7 +22,7 @@ export const ButtonComponent = () => ({
   template: 
   `<f-button
     :buttonType="buttonType">
-    Hello
+    Default Button Styles
   </f-button>`
 });
 
