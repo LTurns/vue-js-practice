@@ -1,11 +1,10 @@
 import { 
   withKnobs,
-  select,
-  text
+  select
 } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
-import Button from '../components/Button.vue'
+import FButton from '../components/Button.vue'
 
 export default {
   title: 'Button',
@@ -13,26 +12,18 @@ export default {
 }
 
 export const ButtonComponent = () => ({
-  components: { Button },
+  components: { FButton },
   props: {
     buttonType: {
-      default: select('Button Type', ['primary', 'secondary', 'link'], 'primary')
-  },
-  buttonSize: {
-      default: select('Button Size', ['small', 'medium', 'large'], 'medium')
-  },
-  href: {
-    default: text('href', '')
+      default: select('Button Type', ['primary', 'secondary'], 'primary')
   }
 },
 
   template: 
-  `<button
-    :buttonType="buttonType"
-    :buttonSize="buttonSize"
-    :href="href">
-    Default Text
-  </button>`
+  `<f-button
+    :buttonType="buttonType">
+    Hello
+  </f-button>`
 });
 
 ButtonComponent.storyName = 'button'
