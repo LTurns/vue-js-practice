@@ -1,16 +1,20 @@
 <template>
+<div>
+<f-header></f-header>
 <f-button
-  button-type="primary"
-  button-size="medium">Hello
+  button-type="primary">Hello
 </f-button>
+</div>
 </template>
 
 <script>
 import FButton from './Button.vue';
+import FHeader from './Header.vue'
 export default {
   name: 'HelloWorld',
   components: {
-    FButton
+    FButton,
+    FHeader
   },
   props: {
     msg: String

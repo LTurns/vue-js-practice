@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-duplicate-attributes */
 <template>
   <button
   :class="`button--${buttonType}`"
@@ -19,6 +20,16 @@ export default {
 </script>
 
 <style scoped>
+
+#button--small {
+  width: 50px;
+  height: 100px;
+}
+
+#button--large {
+  width: 100px;
+  height: 150px;
+}
 
 .button--primary {
     background-color: red;

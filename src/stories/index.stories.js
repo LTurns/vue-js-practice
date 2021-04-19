@@ -16,7 +16,7 @@ export const ButtonComponent = () => ({
   props: {
     buttonType: {
       default: select('Button Type', ['primary', 'secondary'], 'primary')
-  }
+    }
 },
 
   template: 
